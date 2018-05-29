@@ -1,0 +1,461 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Highway Bus Schedule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+
+<style>
+    #customers_1{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 48%;
+    float:left;
+    
+
+}
+
+#customers_1 td, #customers_1 th {
+    border: 1px solid #F0FFF0;
+    text-align: left;
+    padding: 8px;
+}
+
+#customers_1 tr:nth-child(even){background-color: #E6E6FA}
+
+#customers_1 tr:hover {background-color: #ADD8E6;}
+
+#customers_1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#customers_2{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 48%;
+    float:right;
+    
+
+}
+
+#customers_2 td, #customers_2 th {
+    border: 1px solid #F0FFF0;
+    text-align: left;
+    padding: 8px;
+}
+
+#customers_2 tr:nth-child(even){background-color: #E6E6FA}
+
+#customers_2 tr:hover {background-color:  #ADD8E6;}
+
+#customers_2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li class="active"><a href="index.html">Home</a></li> |
+				<li><a href="rooms.html">Roads</a></li> |
+				<li><a href="reservation.html">reservation</a></li> |
+				<li><a href="activities.html">Information</a></li> |
+				<li><a href="contact.html">contact us</a></li>
+				<div class="clear"></div>
+			</ul>
+			
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">Home</a></li> 
+				<li><a href="rooms.html">Roads</a></li> 
+				<li><a href="reservation.html">reservation</a></li> 
+				<li><a href="activities.html">Information</a></li> 
+				<li><a href="contact.html">contact us</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+		<div class="details">
+			<h2 style="color:#32A2E3">Find Your Bus Schedule</h2>
+			<div class="det_pic">
+				  <img src="images/56.jpg" alt="" />
+			</div>
+			<div class="det_text">
+                            <li style="color:#A1489E">
+                                <ol style="list-style-type:disc">
+                                    <li>
+                            
+                            
+				<div class="read_more">
+                                    
+                                   
+                                    <a href="details.html">read more</a>
+                                      
+					 <h2 style="color:#32A2E3">For other vehicles....Pay your tickets online</h2>
+                                         
+						<div class="det_pic">
+							<img src="images/58.jpg" alt="" />
+						</div>
+                                         
+                                         <table id="customers_1">
+                                                    <tr>
+                                                      <th><center>from</center></th>
+                                                      <th><center>to</center></th>
+                                                      <th><center>price</center></th>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Maharagam</td>
+                                                      <td>Kottawa</td>
+                                                      <td>100/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>kahathuduwa</td>
+                                                      <td>120/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>Galanigama</td>
+                                                      <td>150/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>welipanna</td>
+                                                      <td>300/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>kurudugaha</td>
+                                                      <td>330/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>Nayapamula (Baddegama)</td>
+                                                      <td>370/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>Galle</td>
+                                                      <td>400/=</td>
+                                                    </tr>
+                                                  <tr>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>kottawa</td>
+                                                      <td>kahathuduwa</td>
+                                                      <td>100/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>Galanigama</td>
+                                                      <td>130/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>Dodangoda</td>
+                                                      <td>180/=</td>
+                                                    </tr>
+                                                   <tr>
+                                                      <td></td>
+                                                      <td>Welipenna</td>
+                                                      <td>220/=</td>
+                                                    </tr>
+                                                  <tr>
+                                                      <td></td>
+                                                      <td>Nayapayamula</td>
+                                                      <td>280/=</td>
+                                                    </tr>
+                                                  <tr>
+                                                      <td></td>
+                                                      <td>Pinnaduwa</td>
+                                                      <td>340/=</td>
+                                                    </tr>
+                                                  <tr>
+                                                      <td></td>
+                                                      <td>Up to Galle</td>
+                                                      <td>340/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td></td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Welipenna</td>
+                                                      <td>Kurudugaha</td>
+                                                      <td>100/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>Nayapamulata</td>
+                                                      <td>130/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>Pinnaduwa</td>
+                                                      <td>180/=</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td></td>
+                                                      <td>Galle</td>
+                                                      <td>220/=</td>
+                                                    </tr>
+                                                  </table>
+                                         
+                                         
+                                         <table id="customers_2">
+                                                        <tr>
+                                                          <th><center>from</center></th>
+                                                          <th><center>to</center></th>
+                                                          <th><center>price</center></th>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>Kahathuduwa</td>
+                                                          <td>Galanigama</td>
+                                                          <td>100/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td>Dodangoda</td>
+                                                          <td>130/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td>Welipenna </td>
+                                                          <td>180/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td> </td>
+                                                          <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>Kurudugaha</td>
+                                                          <td>Hekampatha</td>
+                                                          <td>220/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td>Nayapamula</td>
+                                                          <td>280/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td>Nayapamula (Baddegama)</td>
+                                                          <td>370/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td>Pinnaduwa</td>
+                                                          <td>340/=</td>
+                                                        </tr>
+                                                      <tr>
+                                                          <td></td>
+                                                          <td>Up to Galle</td>
+                                                          <td>340/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td></td>
+                                                          <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>Galanigama</td>
+                                                          <td>Dodangoda</td>
+                                                          <td>100/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td>Welipenna</td>
+                                                          <td>130/=</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td></td>
+                                                          <td>Pinnaduwa</td>
+                                                          <td>280/=</td>
+                                                        </tr>
+                                                       <tr>
+                                                          <td></td>
+                                                          <td>Galle</td>
+                                                          <td>310/=</td>
+                                                        </tr>
+                                                      <tr>
+                                                          <td></td>
+                                                          <td>Nayapayamula</td>
+                                                          <td>280/=</td>
+                                                        </tr>
+                                                      <tr>
+                                                          <td></td>
+                                                          <td>Pinnaduwa</td>
+                                                          <td>340/=</td>
+                                                        </tr>
+                                                         <tr>
+                                                          <td></td>
+                                                          <td></td>
+                                                          <td></td>
+                                                        </tr>
+                                                         <tr>
+                                                          <td>Pinnaduwa</td>
+                                                          <td>galle</td>
+                                                          <td>100/=</td>
+                                                        </tr>
+                                                         <tr>
+                                                          <td>()</td>
+                                                          <td>()</td>
+                                                          <td>()</td>
+                                                        </tr>
+                                                         <tr>
+                                                          <td>()</td>
+                                                          <td>()</td>
+                                                          <td>()</td>
+                                                        </tr>
+                                                         <tr>
+                                                          <td>()</td>
+                                                          <td>()</td>
+                                                          <td>()</td>
+                                                        </tr>
+                                                     
+                                                      </table><br><br>
+
+                                         
+                                         <br>
+                                        <div class="read_more">
+					 <a href="details.html">read more</a>
+                                         </div>
+					 
+                                 
+					  <h2 style="color:#32A2E3">Rules & Regulations</h2>
+                                          
+					  <div class="det_pic">
+							<img src="images/21.jpg" alt="" />
+						</div>
+                                          
+                                          <h2 style="color:#4854A1">Before starting the journey</h2><br>
+                                            
+                                          <ul style="list-style-type:disc">
+                                           
+                                              &nbsp<li>Plan and decide the entry and exit points.</li>
+                                              &nbsp<li>Check whether the vehicle has enough fuel for the whole journey in the Expressway</li>
+                                              &nbsp<li>Make sure that you have enough money required to pay “user fee”.</li>
+                                              &nbsp<li>Always read instructions/ information displayed in direction signs before proceeding to entry ramp.</li>
+                                
+                                              </ul>
+                                          <br>
+                                              <h2 style="color:#4854A1">Before starting the journey</h2><br>
+                                              
+                                                <ul style="list-style-type:disc">
+                                                     &nbsp<li>Vehicles exiting the interchange should be in the outer lane when passing the 500 m ahead sign of the exit point, switch on ”turning to left” signal light. 
+                                                         Speed reducing lane, begins in a short while. Drive towards the exit point reducing the speed.</li>
+                                                     &nbsp<li>You should never make a sudden change of lanes from inner lane to exit ramp, by cutting across the outer lane, when you see the exit sign. 
+                                                         Such movement could lead to serious accidents involving several vehicles.</li>
+                                                    &nbsp<li>If you miss the exit ramp, you should not reverse or turn back and drive against traffic. 
+                                                        You should drive up to the nearest interchange and come back.</li>
+                                                    
+                                                    </ul>
+                                          
+					 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>		
+<!--start footer -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>© All rights reserved |</span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="rooms.html">Roads</a></li>
+					<li><a href="rooms.html">Other vehicles</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="#"></a></li>
+					<li><a class="icon2" href="#"></a></li>
+					<li><a class="icon3" href="#"></a></li>
+					<li><a class="icon4" href="#"></a></li>
+					<li><a class="icon5" href="#"></a></li>
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>

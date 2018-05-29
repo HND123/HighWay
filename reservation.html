@@ -1,0 +1,275 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Highway Bus Schedule</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<!---strat-date-piker---->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script src="js/jquery-ui.js"></script>
+		  <script>
+				  $(function() {
+				    $( "#datepicker,#datepicker1" ).datepicker();
+				  });
+		  </script>
+<!---/End-date-piker---->
+<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+		<script type="text/javascript" src="js/JFCore.js"></script>
+		<script type="text/javascript" src="js/JFForms.js"></script>
+		<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+		<script type="text/javascript">
+			(function() {
+				JC.init({
+					domainKey: ''
+				});
+				})();
+		</script>
+<!--nav-->
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+<style>
+    
+    input[type=text], select {
+    width: 9%;
+    padding: 9px 11px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text1], select {
+    width: 10%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 9%;
+    background-color: #4863A0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+    </style>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"></a>
+		</div>
+		<div class="h_right">
+			<!--start menu -->
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li> |
+				<li><a href="roads.html">Roads</a></li> |
+				<li class="active"><a href="reservation.html">reservation</a></li> |
+				<li><a href="activities.html">Information</a></li> |
+				<li><a href="contact.html">contact us</a></li>
+				<div class="clear"></div>
+			</ul>
+			
+		</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+				<li class="active"><a href="index.html">Home/a></li> 
+				<li><a href="roads.html">Roads</a></li> 
+				<li><a href="reservation.html">reservation</a></li> 
+				<li><a href="activities.html">Information</a></li> 
+				<li><a href="contact.html">contact us</a></li>
+				</ul>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+	</div>
+</div>
+</div>
+<!--start main -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main">
+            <h4>Your details</h4>
+                 
+                 <h4>Name</h4>
+		<div class="h3_1">
+                   
+				<input type="text"  placeholder="First" border-box="width:300px"> 
+                              <input type="text"  placeholder="Last" border-box="width:300px">
+
+                                                <h4>Mobile Phone</h4>
+
+                                                 <input type="text" ><br><br>
+
+                                                 NIC/Passport number<br>
+                                                 <input type="text" ><br><br>
+                                                
+    </div>
+
+     email address<br>
+    <input type="text" ><br><br>
+
+    Journey From
+        <select>
+           <option>Kottawa</option>
+           <option>Galle</option><br>
+        </select>&nbsp&nbsp
+  Journey To
+        <select>
+  <option>Kottawa</option>
+  <option>Galle</option><br>
+        </select><br><br>
+
+        How many sheet<br>
+        <select>
+           <option>1</option>
+           <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select><br><br>
+          
+   Journey Date<br>
+   <input type="text1"  placeholder="YYYY">
+     <select>
+  <option>January</option>
+  <option>February</option>
+  <option>March</option>
+  <option>April</option>
+  <option>May</option>
+  <option>June</option>
+  <option>July</option>
+  <option>Auguest</option>
+  <option>September</option>
+  <option>October</option>
+  <option>November</option>
+  <option>December</option>
+</select>
+    
+        <input type="text1"  placeholder="DD"><br><br>
+        <input type="checkbox">I confirm to this details are correct.<br><br>
+<input type="submit" value="Book now">
+        </div>
+                                
+                                
+                                
+                                
+                                </div>
+                                
+						
+					</div>	
+		</div>			
+			<div class="span_of_2">
+				<div class="span2_of_1">
+					<h4></h4>
+					<div class="book_date btm">
+						<form>
+							 
+						</form>
+					</div>	
+					
+					</div>	
+				</div>
+				<div class="span2_of_1">
+					
+					<div class="book_date btm">
+						<form>
+							
+    
+						</form>
+					</div>	
+					<div class="sel_room">
+						<h4></h4>
+						
+		        		
+					</div>	
+					<div class="sel_room left">
+						
+					</div>	
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="res_btn">
+				<form>
+					<input type="submit" value="book now" style="width: 280px;">
+				</form>
+			</div>
+	</div>
+</div>
+</div>		
+<!--start main -->
+<div class="footer_bg">
+<div class="wrap">
+<div class="footer">
+			<div class="copy">
+				<p class="link"><span>© All rights reserved | </span></p>
+			</div>
+			<div class="f_nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="rooms.html">Roads</a></li>
+					<li><a href="rooms.html">Other vehicles</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
+			</div>
+			<div class="soc_icons">
+				<ul>
+					<li><a class="icon1" href="#"></a></li>
+					<li><a class="icon2" href="#"></a></li>
+					<li><a class="icon3" href="#"></a></li>
+					<li><a class="icon4" href="#"></a></li>
+					<li><a class="icon5" href="#"></a></li>
+					<div class="clear"></div>
+				</ul>	
+			</div>
+			<div class="clear"></div>
+</div>
+</div>
+</div>		
+</body>
+</html>
